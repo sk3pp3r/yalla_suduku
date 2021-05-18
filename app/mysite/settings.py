@@ -25,12 +25,7 @@ SECRET_KEY = '2el^%(n(fntm@a@323=9)&##go6a=ayec0-+xyq)@4kkr64l!%'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = [
-	'0.0.0.0',
-	'localhost',
-    '127.0.0.1'
-]
-
+ALLOWED_HOSTS = ['*']
 
 # Application definition
 

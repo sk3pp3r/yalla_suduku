@@ -26,7 +26,7 @@ SECRET_KEY = '2el^%(n(fntm@a@323=9)&##go6a=ayec0-+xyq)@4kkr64l!%'
 DEBUG = True
 
 ALLOWED_HOSTS = [
-	'oskaerik.pythonanywhere.com',
+	'0.0.0.0',
 	'localhost',
     '127.0.0.1'
 ]

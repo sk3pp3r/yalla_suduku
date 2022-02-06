@@ -20,5 +20,5 @@ jobs:
     - name: run tests
       run: | 
         echo --- Running test cases ---
-        docker-compose -f https://github.com/sk3pp3r/yalla_suduku/blob/main/docker-compose.yml -p testing up --build
+        docker-compose -f https://raw.githubusercontent.com/sk3pp3r/yalla_suduku/main/docker-compose.yml -p testing up --build
         echo --- Completed test cases ---

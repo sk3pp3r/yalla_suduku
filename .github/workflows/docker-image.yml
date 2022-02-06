@@ -17,7 +17,8 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - shell: bash
+    - name: run tests
       run: | 
-          python -m pip install django 
-          CMD ["python3", "manage.py", "runserver", "0.0.0.0:8000"]
+        echo --- Running test cases ---
+        docker-compose -f https://github.com/sk3pp3r/yalla_suduku/blob/main/docker-compose.yml -p testing up --build
+        echo --- Completed test cases ---

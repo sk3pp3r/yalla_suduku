@@ -18,7 +18,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: run python
-      run: python -m pip install django && WORKDIR /app && COPY . /app
+      run: python -m pip install django  && COPY . /app
       
     - name: run expose port 8080
       run: EXPOSE 8000

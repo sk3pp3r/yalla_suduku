@@ -14,12 +14,11 @@ jobs:
     defaults:
       run:
         working-directory: app
-        shell: bash
 
     steps:
     - uses: actions/checkout@v2
-    - name: run python
+    - shell: bash
       run: | 
-         python -m pip install django
-         EXPOSE 8000
-         CMD ["python3", "manage.py", "runserver", "0.0.0.0:8000"]
+          python -m pip install django && WORKDIR /app && COPY . /app
+          EXPOSE 8000
+          CMD ["python3", "manage.py", "runserver", "0.0.0.0:8000"]

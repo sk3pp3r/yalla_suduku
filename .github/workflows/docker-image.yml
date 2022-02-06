@@ -2,23 +2,17 @@ name: Docker Image CI
 
 on:
   push:
-    branches: [ main ]
+    branches: [ master ]
   pull_request:
-    branches: [ main ]
+    branches: [ master ]
 
 jobs:
 
   build:
 
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: app
 
     steps:
     - uses: actions/checkout@v2
-    - name: run tests
-      run: | 
-        echo --- Running test cases ---
-        docker-compose -f https://raw.githubusercontent.com/sk3pp3r/yalla_suduku/main/docker-compose.yml -p testing up --build
-        echo --- Completed test cases ---
+    - name: Build the Docker image
+      run: docker build . --file https://raw.githubusercontent.com/sk3pp3r/yalla_suduku/main/app/Dockerfile --tag my-image-name:$(date +%s)

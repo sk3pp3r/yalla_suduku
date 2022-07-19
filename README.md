@@ -7,7 +7,7 @@ This Repo is fork of https://github.com/oskaerik/sudoku-django.
 
 A dockerize sudoku solver using 'docker image' and 'docker-compose'
 
-How To? 
+## How To? 
 ```
 $> git clone https://github.com/sk3pp3r/yalla_suduku.git
 $> cd yalla_suduku

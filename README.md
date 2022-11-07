@@ -19,3 +19,7 @@ $> docker-composer up -d
 * Docker-compose version 1.24.0
 * Operating System: Ubuntu 18.04.5 LTS
 * Architecture: x86_64
+
+
+***
+<a href="https://www.buymeacoffee.com/haim_cohen" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" height="41" width="174"></a>
